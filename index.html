@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1b1017" />
+    <meta
+      name="description"
+      content="A little birthday magic for Oun Jruk, with a blooming red rose."
+    />
+    <title>Happy Birthday, Oun Jruk!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="birthday-card">
+      <section class="greeting" aria-labelledby="birthday-title">
+        <p class="eyebrow"><span class="sparkle" aria-hidden="true">✦</span> 06 December 2026</p>
+        <h1 id="birthday-title">Happy<br />Birthday</h1>
+        <p class="name">Oun Jruk<span class="name-period">.</span></p>
+        <p class="message">
+          🎉🎂 រីករាយថ្ងៃកំណើតអូនជ្រូក​​💖! 🎂🎉
+          សូមឱ្យថ្ងៃពិសេសរបស់អូនពោរពេញទៅដោយក្តីស្រឡាញ់ សុភមង្គល សំណើច និងរឿងរ៉ាវដ៏អស្ចារ្យដែលមិននឹកស្មានដល់!
+          សូមជូនពរឱ្យអូនមានសុខភាពល្អ ទទួលបានជោគជ័យដ៏ត្រចះត្រចង់ មានពរជ័យមិនចេះរីងស្ងួត និងសម្រេចបាននូវក្តីសុបិនទាំងអស់របស់អូន។
+          សូមឱ្យឆ្នាំថ្មីនៃជីវិតរបស់អូននាំមកនូវភាពដ៏ស្រស់ស្អាតជាច្រើន និងអនុស្សាវរីយ៍ដែលមិនអាចបំភ្លេចបាន!
+          រីករាយថ្ងៃកំណើត! សូមឱ្យមានក្តីសុខ ទទួលបានពរជ័យ និងបន្តភ្លឺស្វាងជានិច្ច!
+          អូនជ្រូកគឺជាអ្នកដ៏អស្ចារ្យ និងមានតម្លៃខ្ពស់។ សូមឱ្យថ្ងៃនេះនិងថ្ងៃក្រោយៗទាំងអស់របស់អូនពោរពេញទៅដោយភាពសប្បាយរីករាយ និងភាពស្រស់ស្អាត!
+        </p>
+        <p class="message">
+          បងមានពាក្យជាច្រើនដែរបងមិនទាន់មានឱកាស​​ និងសរសេរវា។ ប៉ុន្តែសូមឱ្យអូនដឹងថាពេលវេលាល្អៗកន្លងមកដែលបងបានជួបអូនគឺជាការចងចាំមួយដ៏ល្អបំផុតនៅក្នុងជីវិតបងទោះមិនទាន់ជាស្នេហា។ អូនជ្រូកគឺស្ថិតនៅក្នុងចិត្តបងជានិច្ច។
+        </p>
+        <button class="wish-button" id="wish-button" type="button">
+          <span>Make a wish</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.64 5.64l2.12 2.12m8.48 8.48 2.12 2.12m0-12.72-2.12 2.12m-8.48 8.48-2.12 2.12" />
+          </svg>
+        </button>
+        <p class="wish-note" id="wish-note" aria-live="polite">Today is all about you.</p>
+      </section>
+
+      <figure class="rose-wrap" aria-label="An animated red rose in bloom">
+        <div class="rose-glow" aria-hidden="true"></div>
+        <svg class="rose" viewBox="0 0 420 520" role="img" aria-labelledby="rose-title">
+          <title id="rose-title">A red rose blooming</title>
+          <defs>
+            <linearGradient id="stem-gradient" x1="0" x2="1">
+              <stop offset="0" stop-color="#28553c" />
+              <stop offset="0.55" stop-color="#4e9162" />
+              <stop offset="1" stop-color="#244a36" />
+            </linearGradient>
+            <linearGradient id="leaf-gradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#77a96d" />
+              <stop offset="1" stop-color="#28523a" />
+            </linearGradient>
+            <radialGradient id="petal-gradient" cx="0.35" cy="0.2" r="0.9">
+              <stop offset="0" stop-color="#ff7380" />
+              <stop offset="0.48" stop-color="#e52e47" />
+              <stop offset="1" stop-color="#9d102c" />
+            </radialGradient>
+            <linearGradient id="inner-petal-gradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ff9a91" />
+              <stop offset="0.5" stop-color="#f04459" />
+              <stop offset="1" stop-color="#b81234" />
+            </linearGradient>
+          </defs>
+
+          <g class="stem-group">
+            <path class="stem" d="M210 207 C204 286 225 357 207 480" />
+            <path class="leaf leaf-left" d="M207 370 C164 323 111 337 119 378 C127 415 176 411 207 370Z" />
+            <path class="leaf-vein vein-left" d="M204 371 C171 368 147 363 127 362" />
+            <path class="leaf leaf-right" d="M213 425 C250 378 302 383 300 421 C298 457 252 463 213 425Z" />
+            <path class="leaf-vein vein-right" d="M218 426 C247 420 273 414 293 408" />
+            <path class="calyx" d="M210 224 C183 207 172 190 170 176 C190 184 202 190 210 201 C216 186 231 174 251 170 C247 193 234 211 210 224Z" />
+          </g>
+
+          <g transform="translate(210 174)">
+            <g class="flower">
+            <g class="outer-petals">
+              <path class="petal petal-outer" transform="rotate(-72)" d="M0 16 C-50 -5 -54 -55 -34 -88 C-17 -116 20 -107 26 -76 C35 -38 17 -5 0 16Z" />
+              <path class="petal petal-outer" transform="rotate(0)" d="M0 16 C-50 -5 -54 -55 -34 -88 C-17 -116 20 -107 26 -76 C35 -38 17 -5 0 16Z" />
+              <path class="petal petal-outer" transform="rotate(72)" d="M0 16 C-50 -5 -54 -55 -34 -88 C-17 -116 20 -107 26 -76 C35 -38 17 -5 0 16Z" />
+              <path class="petal petal-outer" transform="rotate(144)" d="M0 16 C-50 -5 -54 -55 -34 -88 C-17 -116 20 -107 26 -76 C35 -38 17 -5 0 16Z" />
+              <path class="petal petal-outer" transform="rotate(216)" d="M0 16 C-50 -5 -54 -55 -34 -88 C-17 -116 20 -107 26 -76 C35 -38 17 -5 0 16Z" />
+            </g>
+            <g class="inner-petals">
+              <path class="petal petal-inner" transform="rotate(-45) scale(.72)" d="M0 15 C-47 -4 -48 -54 -29 -83 C-13 -108 18 -96 23 -67 C30 -34 14 -3 0 15Z" />
+              <path class="petal petal-inner" transform="rotate(45) scale(.72)" d="M0 15 C-47 -4 -48 -54 -29 -83 C-13 -108 18 -96 23 -67 C30 -34 14 -3 0 15Z" />
+              <path class="petal petal-inner" transform="rotate(135) scale(.72)" d="M0 15 C-47 -4 -48 -54 -29 -83 C-13 -108 18 -96 23 -67 C30 -34 14 -3 0 15Z" />
+              <path class="petal petal-inner" transform="rotate(225) scale(.72)" d="M0 15 C-47 -4 -48 -54 -29 -83 C-13 -108 18 -96 23 -67 C30 -34 14 -3 0 15Z" />
+            </g>
+            <path class="heart-petal" d="M-20 0 C-35 -18 -21 -43 -4 -32 C7 -46 30 -34 24 -16 C20 -3 8 6 0 12 C-8 8 -15 5 -20 0Z" />
+            <path class="rose-curl" d="M-8 -13 C7 -26 25 -12 16 1 C10 10 -3 9 -6 1 C-9 -6 0 -12 6 -8" />
+            </g>
+          </g>
+        </svg>
+        <figcaption class="rose-caption">A rose, just for you</figcaption>
+        <div class="petal-burst" id="petal-burst" aria-hidden="true"></div>
+      </figure>
+
+      <p class="signature">Nhem Socheata <span aria-hidden="true">♥</span></p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
