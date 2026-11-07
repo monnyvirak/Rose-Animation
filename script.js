@@ -1,25 +1,26 @@
 const wishButton = document.querySelector("#wish-button");
-const wishNote = document.querySelector("#wish-note");
-const petalBurst = document.querySelector("#petal-burst");
+const loveNote = document.querySelector("#love-note");
+const heartBurst = document.querySelector("#heart-burst");
 
 wishButton.addEventListener("click", () => {
-  wishNote.textContent = "Your birthday wish is on its way. ✨";
-  wishButton.querySelector("span").textContent = "Wish sent!";
+  loveNote.hidden = false;
+  wishButton.querySelector("span").textContent = "Surprise opened";
   wishButton.disabled = true;
 
-  for (let index = 0; index < 24; index += 1) {
-    const petal = document.createElement("span");
-    const angle = (Math.PI * 2 * index) / 24 + Math.random() * 0.3;
-    const distance = 90 + Math.random() * 150;
-    const duration = 1.4 + Math.random() * 1.3;
+  for (let index = 0; index < 22; index += 1) {
+    const heart = document.createElement("span");
+    const angle = (Math.PI * 2 * index) / 22 + Math.random() * 0.35;
+    const distance = 70 + Math.random() * 120;
+    const duration = 1.2 + Math.random() * 1.1;
 
-    petal.className = "burst-petal";
-    petal.style.setProperty("--x", `${Math.cos(angle) * distance}px`);
-    petal.style.setProperty("--y", `${Math.sin(angle) * distance - 50}px`);
-    petal.style.setProperty("--rotation", `${Math.random() * 560 - 280}deg`);
-    petal.style.setProperty("--duration", `${duration}s`);
-    petal.style.animationDelay = `${Math.random() * 180}ms`;
-    petalBurst.append(petal);
-    window.setTimeout(() => petal.remove(), duration * 1000 + 250);
+    heart.className = "burst-heart";
+    heart.textContent = "♥";
+    heart.style.setProperty("--x", `${Math.cos(angle) * distance}px`);
+    heart.style.setProperty("--y", `${Math.sin(angle) * distance - 55}px`);
+    heart.style.setProperty("--rotation", `${Math.random() * 100 - 50}deg`);
+    heart.style.setProperty("--size", `${12 + Math.random() * 12}px`);
+    heart.style.setProperty("--duration", `${duration}s`);
+    heartBurst.append(heart);
+    window.setTimeout(() => heart.remove(), duration * 1000 + 100);
   }
 });

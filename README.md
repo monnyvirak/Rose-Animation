@@ -1,17 +1,27 @@
-# Rose Animation
+# A Birthday Rose
 
-A small static birthday greeting with an animated rose.
+A romantic, mobile-friendly birthday greeting with a blooming rose and an
+interactive surprise. It's a static site: no build step, dependencies, or
+server required.
 
-## Production site
+## Run locally
 
-The site is deployed automatically to GitHub Pages whenever changes are pushed
-to `main`:
+Open `index.html` in a browser, or serve this folder with any static file server.
+
+## Personalize it
+
+Edit `index.html` to change the recipient, birthday date, and message. The
+surprise note is the text inside the `#love-note` element. Update the page title
+and description in the document head too.
+
+## Deploy to GitHub Pages
+
+The workflow in `.github/workflows/deploy.yml` deploys the site when you push to
+`main`. In the repository, open **Settings → Pages**, choose **GitHub Actions**
+as the **Build and deployment** source, then push to `main` or run **Deploy to
+GitHub Pages** from the Actions tab. The Pages setting must be enabled once by a
+repository administrator.
+
+For this repository, the expected site URL is:
 
 https://monnyvirak.github.io/Rose-Animation/
-
-To enable deployment for a fork or a newly created repository, open
-**Settings → Pages**, then set **Build and deployment → Source** to
-**GitHub Actions**.
-
-To deploy manually, open **Actions**, select **Deploy to GitHub Pages**, and
-choose **Run workflow**.
